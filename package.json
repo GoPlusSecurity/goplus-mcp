@@ -1,0 +1,40 @@
+{
+  "name": "goplus-mcp",
+  "version": "1.0.0",
+  "description": "Model Context Protocol (MCP) server for GoPlus API integration",
+  "main": "dist/index.js",
+  "bin": {
+    "goplus-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "goplus",
+    "mcp",
+    "blockchain",
+    "security",
+    "api"
+  ],
+  "author": "GoPlus Security",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
