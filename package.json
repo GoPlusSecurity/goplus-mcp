@@ -1,0 +1,64 @@
+{
+  "name": "goplus-mcp",
+  "version": "1.0.0",
+  "description": "Model Context Protocol (MCP) server for GoPlus Security API integration, enabling LLM clients to access blockchain security analysis",
+  "main": "dist/index.js",
+  "bin": {
+    "goplus-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "goplus",
+    "mcp",
+    "blockchain",
+    "security",
+    "api",
+    "web3",
+    "defi",
+    "token-security",
+    "address-analysis",
+    "phishing-detection",
+    "nft-security",
+    "solana",
+    "sui",
+    "ethereum",
+    "model-context-protocol"
+  ],
+  "author": "GoPlus Security",
+  "license": "MIT",
+  "homepage": "https://github.com/your-org/goplus-mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-org/goplus-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/goplus-mcp/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "axios": "^1.6.7",
+    "commander": "^12.0.0",
+    "zod": "^3.25.32"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ]
+}
