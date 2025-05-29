@@ -1,6 +1,6 @@
 {
   "name": "goplus-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Model Context Protocol (MCP) server for GoPlus Security API integration, enabling LLM clients to access blockchain security analysis",
   "main": "dist/index.js",
   "bin": {

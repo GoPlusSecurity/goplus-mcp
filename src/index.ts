@@ -15,7 +15,7 @@ async function main() {
     // Validate API credentials
     if (!GOPLUS_API_KEY || !GOPLUS_API_SECRET) {
       console.error("Error: GoPlus API credentials not provided. Please use --key and --secret options.");
-      process.exit(1);
+      // process.exit(1);
     }
     
     // Get and cache the access token
@@ -24,7 +24,7 @@ async function main() {
       tokenManager.setGoPlusToken(token);
     } catch (error: any) {
       console.error(`Error: Failed to obtain GoPlus API access token: ${error.message}`);
-      process.exit(1);
+      // process.exit(1);
     }
 
     // Create MCP server
